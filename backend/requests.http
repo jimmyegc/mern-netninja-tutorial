@@ -1,0 +1,37 @@
+
+### Hello world
+GET http://localhost:4000/
+
+### Get All
+GET http://localhost:4000/api/workouts
+
+### Get One
+GET http://localhost:4000/api/workouts/67e5d17a5e88519a10db3625
+
+### Create
+POST http://localhost:4000/api/workouts
+Content-Type: application/json
+
+{
+  "title": "Workout 2",
+  "load": 30,
+  "reps": 3
+}
+
+### Update
+PATCH http://localhost:4000/api/workouts/67e5d17a5e88519a10db3625
+Content-Type: application/json
+
+{
+  "title": "Workout 2",
+  "load": 33,
+  "reps": 6
+}
+
+### Delete
+DELETE http://localhost:4000/api/workouts/67e5d17a5e88519a10db3625
+
+
+
+
+
