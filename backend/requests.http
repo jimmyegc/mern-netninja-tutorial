@@ -32,6 +32,24 @@ Content-Type: application/json
 DELETE http://localhost:4000/api/workouts/67e5d17a5e88519a10db3625
 
 
+### Login
+POST http://localhost:4000/api/user/signin
 
+### Register
+POST http://localhost:4000/api/user/signup
+Content-Type: application/json
 
+{
+  "email": "menikmati2@gmail.com",
+  "password": "123456#Abc"
+}
 
+### Login
+
+POST http://localhost:4000/api/user/signin
+Content-Type: application/json
+
+{
+  "email": "menikmati2@gmail.com",
+  "password": "123456#Abcx"
+}

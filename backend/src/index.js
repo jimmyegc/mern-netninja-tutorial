@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGODB_URI)
     console.log(error.message)
   })
 
-
+import usersRouter from './routes/users.js' 
 import workoutsRouter from './routes/workouts.js'
 
 // express app
@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello World' })
 })
 
+app.use('/api/user', usersRouter)
 app.use('/api/workouts', workoutsRouter)
 
 // listen for requests
